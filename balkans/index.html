@@ -1984,7 +1984,7 @@ Range: 80Nm</pre>
     </td>
     <td align="right">
       <label>&nbsp;</label>
-      <label id="sidc-val" style='font-size:95%''>10061000161211000000</label>
+      <label id="sidc-val" style='font-size:95%'>10061000161211000000</label>
     </td>
     </tr>
   </table>
@@ -2109,7 +2109,7 @@ Range: 80Nm</pre>
           <tr><td align="right">Session</td><td><input type="text" id="imcs-session" name="session" onchange="changedIMCS(this);" style="width:130px"></td></tr>
           <tr><td align="right">Address</td><td><input type="text" id="imcs-host" name="host" value="collab.falcon-bms.com" onchange="changedIMCS(this);"  style="width:130px"></td></tr>
           <tr><td align="right" valign="top">Port</td><td><input type="text" id="imcs-port" name="port" value="443" onchange="changedIMCS(this);"  style="width:50px"><br>
-            <button id="imcs-connection" style="float: right; width:50px"" onclick="button(event)">&nbspJoin&nbsp</button></td></tr>
+            <button id="imcs-connection" style="float: right; width:50px" onclick="button(event)">&nbspJoin&nbsp</button></td></tr>
         </table>
         <br>
         <b>Global Forecast System</b><hr>
@@ -2360,7 +2360,7 @@ Range: 80Nm</pre>
 <center><canvas id="chart" width="800" height="550"></canvas></center>
 </div>
 
-<textarea id="TextEntry" class="text-area""></textarea>
+<textarea id="TextEntry" class="text-area"></textarea>
 
   <!-- The Maps and Airbases Overlay -->
   <div id="container">
@@ -2369,7 +2369,7 @@ Range: 80Nm</pre>
       <canvas id="annotation" width="3840" height="3840"></canvas>
       <div id=Airbases class="overlay">
         <img src="resources/map_airbases.png" id="airbases" width="3840" height="3840" alt="" border="0" usemap="#Map">
-        <div id="UserInputs" class="inputs">
+        <div id="UserInputs" class="inputs" style="display: none;">
           <table id="locate" border="0" cellpadding="0" cellspacing="0">
           <tr>
           <td style="width: 50px;">&nbsp;</td>
@@ -2406,7 +2406,7 @@ You must set the map datum in degrees for the map south west corner for Lat/Long
 <area shape="circle" coords="104,1392,17" href="javascript:void(0);" alt="NATO" title="AMPUGNANO" onclick="return popup('AMPUGNANO');"/>
 <area shape="circle" coords="204,304,17" href="javascript:void(0);" alt="NATO" title="ASIAGO" onclick="return popup('ASIAGO');"/>
 <area shape="circle" coords="648,248,17" href="javascript:void(0);" alt="NATO" title="AVIANO" onclick="return popup('AVIANO');"/>
-<area shape="circle" coords="384,144,17" href="javascript:void(0);" alt="NATO" title="AXALP-Range" onclick="return popup('AXALP-Range');"/>
+<area shape="circle" coords="384,144,17" href="javascript:void(0);" alt="NATO" title="AXALP" onclick="return popup('AXALP-Range');"/>
 <area shape="circle" coords="616,3572,17" href="javascript:void(0);" alt="NATO" title="BIRGI" onclick="return popup('BIRGI');"/>
 <area shape="circle" coords="120,80,17" href="javascript:void(0);" alt="NATO" title="BOLZANO" onclick="return popup('BOLZANO');"/>
 <area shape="circle" coords="112,856,17" href="javascript:void(0);" alt="NATO" title="BORGO PANIGALE" onclick="return popup('BORGO_PANIGALE');"/>
@@ -2447,7 +2447,7 @@ You must set the map datum in degrees for the map south west corner for Lat/Long
 <area shape="circle" coords="480,404,17" href="javascript:void(0);" alt="NATO" title="S.ANGELO" onclick="return popup('S.ANGELO');"/>
 <area shape="circle" coords="616,1440,17" href="javascript:void(0);" alt="NATO" title="S.FRANCESCO" onclick="return popup('S.FRANCESCO');"/>
 <area shape="circle" coords="2808,2536,17" href="javascript:void(0);" alt="NATO" title="SAN PANCRAZIO" onclick="return popup('SAN_PANCRAZIO');"/>
-<area shape="circle" coords="1236,3836,17" href="javascript:void(0);" alt="NATO" title="SICILY-Range" onclick="return popup('SICILY-Range');"/>
+<area shape="circle" coords="1236,3836,17" href="javascript:void(0);" alt="NATO" title="SICILY" onclick="return popup('SICILY-Range');"/>
 <area shape="circle" coords="1592,3788,17" href="javascript:void(0);" alt="NATO" title="SIGONELLA" onclick="return popup('SIGONELLA');"/>
 <area shape="circle" coords="556,456,17" href="javascript:void(0);" alt="NATO" title="TESSARA" onclick="return popup('TESSARA');"/>
 <area shape="circle" coords="628,1916,17" href="javascript:void(0);" alt="NATO" title="URBE" onclick="return popup('URBE');"/>
@@ -2479,14 +2479,13 @@ You must set the map datum in degrees for the map south west corner for Lat/Long
 
 <!--Croatia -->
 <area shape="circle" coords="2996,1672,17" href="javascript:void(0);" alt="Croatia" title="DUBROVNIK" onclick="return popup('DUBROVNIK');"/>
-<area shape="circle" coords="2940,488,17" href="javascript:void(0);" alt="Croatia" title="GASINCI-Range" onclick="return popup('GASINCI-Range');"/>
+<area shape="circle" coords="2940,488,17" href="javascript:void(0);" alt="Croatia" title="GASINCI" onclick="return popup('GASINCI-Range');"/>
 <area shape="circle" coords="2168,1264,17" href="javascript:void(0);" alt="Croatia" title="KASTELA" onclick="return popup('KASTELA');"/>
 <area shape="circle" coords="3192,480,17" href="javascript:void(0);" alt="Croatia" title="KLISA" onclick="return popup('KLISA');"/>
 <area shape="circle" coords="2080,364,17" href="javascript:void(0);" alt="Croatia" title="PLESO" onclick="return popup('PLESO');"/>
 <area shape="circle" coords="1196,716,17" href="javascript:void(0);" alt="Croatia" title="PULA" onclick="return popup('PULA');"/>
 <area shape="circle" coords="1464,604,17" href="javascript:void(0);" alt="Croatia" title="RIJEKA" onclick="return popup('RIJEKA');"/>
-<area shape="circle" coords="1944,844,17" href="javascript:void(0);" alt="Croatia" title="PLESO" onclick="return popup('UDBINA');"/>
-<area shape="circle" coords="1301,2109,17" href="javascript:void(0);" alt="Croatia" title="UDBINA" onclick="return popup('PULA');"/>
+<area shape="circle" coords="1944,844,17" href="javascript:void(0);" alt="Croatia" title="UDBINA" onclick="return popup('UDBINA');"/>
 <area shape="circle" coords="2204,144,17" href="javascript:void(0);" alt="Croatia" title="VARAZDIN" onclick="return popup('VARAZDIN');"/>
 <area shape="circle" coords="1788,1036,17" href="javascript:void(0);" alt="Croatia" title="ZEMUNIK" onclick="return popup('ZEMUNIK');"/>
 
@@ -2537,16 +2536,16 @@ You must set the map datum in degrees for the map south west corner for Lat/Long
 <area shape="circle" coords="1780,316,17" href="javascript:void(0);" alt="Slovenia Airstrips" title="NOVO MESTO" onclick="return popup('NOVO_MESTO');"/>
 
 <!-- VORTACs -->
-<area shape="circle" coords="1936,2096,17" href="javascript:void(0);" alt="VORTAC" title="AMENDOLA" onclick="return popup('AMENDOLA_TACAN');"/>
-<area shape="circle" coords="644,248,17" href="javascript:void(0);" alt="VORTAC" title="AVIANO" onclick="return popup('AVIANO_TACAN');"/>
-<area shape="circle" coords="564,992,17" href="javascript:void(0);" alt="VORTAC" title="CERVIA" onclick="return popup('CERVIA_TACAN');"/>
-<area shape="circle" coords="524,656,17" href="javascript:void(0);" alt="VORTAC" title="CHIOGGIA" onclick="return popup('CHIOGGIA_TACAN');"/>
-<area shape="circle" coords="2424,2384,17" href="javascript:void(0);" alt="VORTAC" title="GIOIA DEL COLLE" onclick="return popup('GIOIA_DEL_COLLE_TACAN');"/>
-<area shape="circle" coords="456,380,17" href="javascript:void(0);" alt="VORTAC" title="ISTRANA" onclick="return popup('ISTRANA_TACAN');"/>
-<area shape="circle" coords="844,260,17" href="javascript:void(0);" alt="VORTAC" title="RIVOLTO" onclick="return popup('RIVOLTO_TACAN');"/>
-<area shape="circle" coords="1612,3792,17" href="javascript:void(0);"  alt="VORTAC" title="SIGONELLA" onclick="return popup('SIGONELLA_TACAN');"/>
-<area shape="circle" coords="1296,1724,17" href="javascript:void(0);" alt="VORTAC" title="PESCARA" onclick="return popup('PESCARA_TACAN');"/>
-<area shape="circle" coords="276,408,17" href="javascript:void(0);"  alt="VORTAC" title="VICENZA" onclick="return popup('VICENZA_TACAN');"/>
+<area shape="circle" coords="1936,2096,17" href="javascript:void(0);" alt="VORTAC" title="AMENDOLA TACAN" onclick="return popup('AMENDOLA_TACAN');"/>
+<area shape="circle" coords="644,248,17" href="javascript:void(0);" alt="VORTAC" title="AVIANO TACAN" onclick="return popup('AVIANO_TACAN');"/>
+<area shape="circle" coords="564,992,17" href="javascript:void(0);" alt="VORTAC" title="CERVIA TACAN" onclick="return popup('CERVIA_TACAN');"/>
+<area shape="circle" coords="524,656,17" href="javascript:void(0);" alt="VORTAC" title="CHIOGGIA TACAN" onclick="return popup('CHIOGGIA_TACAN');"/>
+<area shape="circle" coords="2424,2384,17" href="javascript:void(0);" alt="VORTAC" title="GIOIA DEL COLLE TACAN" onclick="return popup('GIOIA_DEL_COLLE_TACAN');"/>
+<area shape="circle" coords="456,380,17" href="javascript:void(0);" alt="VORTAC" title="ISTRANA TACAN" onclick="return popup('ISTRANA_TACAN');"/>
+<area shape="circle" coords="844,260,17" href="javascript:void(0);" alt="VORTAC" title="RIVOLTO TACAN" onclick="return popup('RIVOLTO_TACAN');"/>
+<area shape="circle" coords="1612,3792,17" href="javascript:void(0);"  alt="VORTAC" title="SIGONELLA TACAN" onclick="return popup('SIGONELLA_TACAN');"/>
+<area shape="circle" coords="1296,1724,17" href="javascript:void(0);" alt="VORTAC" title="PESCARA TACAN" onclick="return popup('PESCARA_TACAN');"/>
+<area shape="circle" coords="276,408,17" href="javascript:void(0);"  alt="VORTAC" title="VICENZA TACAN" onclick="return popup('VICENZA_TACAN');"/>
 
 <!-- Special Map areas and Coordinates based on 4096x4096-->
 <!-- Map Legend Area -->

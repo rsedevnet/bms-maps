@@ -64,12 +64,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
 /* Modal Content */
 .modal-content {
   position: fixed;
-  left: 55px; top: 73px;
+  left: 12px; top: 18px;
   /* background-color: #f5f5f5; */
   background-color: rgba(245,245,245,1);
   border: 1px solid #000000;
-  box-shadow: 5px 5px 5px #222222;
-  margin: auto; padding: 10px; width: 220px; font-size: medium;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  margin: auto;
+  padding: 10px;
+  width: 220px;
+  font-size: medium;
 }
 
 /* Overlay Airbases */

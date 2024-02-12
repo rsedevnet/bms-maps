@@ -1778,7 +1778,7 @@ APP/DEP: 296.2
     </td>
     <td align="right">
       <label>&nbsp;</label>
-      <label id="sidc-val" style='font-size:95%''>10061000161211000000</label>
+      <label id="sidc-val" style='font-size:95%'>10061000161211000000</label>
     </td>
     </tr>
   </table>
@@ -1903,7 +1903,7 @@ APP/DEP: 296.2
           <tr><td align="right">Session</td><td><input type="text" id="imcs-session" name="session" onchange="changedIMCS(this);" style="width:130px"></td></tr>
           <tr><td align="right">Address</td><td><input type="text" id="imcs-host" name="host" value="collab.falcon-bms.com" onchange="changedIMCS(this);"  style="width:130px"></td></tr>
           <tr><td align="right" valign="top">Port</td><td><input type="text" id="imcs-port" name="port" value="443" onchange="changedIMCS(this);"  style="width:50px"><br>
-            <button id="imcs-connection" style="float: right; width:50px"" onclick="button(event)">&nbspJoin&nbsp</button></td></tr>
+            <button id="imcs-connection" style="float: right; width:50px" onclick="button(event)">&nbspJoin&nbsp</button></td></tr>
         </table>
         <br>
         <b>Global Forecast System</b><hr>
@@ -2154,7 +2154,7 @@ APP/DEP: 296.2
 <center><canvas id="chart" width="800" height="550"></canvas></center>
 </div>
 
-<textarea id="TextEntry" class="text-area""></textarea>
+<textarea id="TextEntry" class="text-area"></textarea>
 
   <!-- The Maps and Airbases Overlay -->
   <div id="container">
@@ -2163,7 +2163,7 @@ APP/DEP: 296.2
       <canvas id="annotation" width="3840" height="3840"></canvas>
       <div id=Airbases class="overlay">
         <img src="resources/map_airbases.png" id="airbases" width="3840" height="3840" alt="" border="0" usemap="#Map">
-        <div id="UserInputs" class="inputs">
+        <div id="UserInputs" class="inputs" style="display: none;">
           <table id="locate" border="0" cellpadding="0" cellspacing="0">
             <tr>
             <td style="width: 50px;">&nbsp;</td>
@@ -2208,8 +2208,8 @@ You must set the map datum in degrees for the map south west corner for Lat/Long
 <area shape="circle" coords="1960,1176,17" href="javascript:void(0);" alt="Israel" title="SDE DOV" onclick="return popup('SDE_DOV');"/>
 <area shape="circle" coords="1940,1320,17" href="javascript:void(0);" alt="Israel" title="TEL NOF" onclick="return popup('TEL_NOF');"/>
 
-<area shape="circle" coords="2132,996,17" href="javascript:void(0);" alt="Israel Airstrips" title="MEGGIDO Airstrip" onclick="return popup('MEGGIDO_Airstrip');"/>
-<area shape="circle" coords="2292,808,17" href="javascript:void(0);" alt="Israel Airstrips" title="ROSH PINA Airstrip" onclick="return popup('ROSH_PINA_Airstrip');"/>
+<area shape="circle" coords="2132,996,17" href="javascript:void(0);" alt="Israel Airstrips" title="MEGGIDO" onclick="return popup('MEGGIDO_Airstrip');"/>
+<area shape="circle" coords="2292,808,17" href="javascript:void(0);" alt="Israel Airstrips" title="ROSH PINA" onclick="return popup('ROSH_PINA_Airstrip');"/>
 
 <!-- Egypt -->
 <area shape="circle" coords="1312,2528,17" href="javascript:void(0);" alt="Egypt" title="ABU RUDIES" onclick="return popup('ABU_RUDIES');"/>
@@ -2262,7 +2262,7 @@ You must set the map datum in degrees for the map south west corner for Lat/Long
 <area shape="circle" coords="3944,932,17" href="javascript:void(0);" alt="Iraq" title="H-3 SOUTH" onclick="return popup('H-3_SOUTH');"/>
 <area shape="circle" coords="3736,1044,17" href="javascript:void(0);" alt="Iraq" title="RUWAYSHID" onclick="return popup('RUWAYSHID');"/>
 
-<area shape="circle" coords="3800,3768,17" href="javascript:void(0);" alt="Iraq Airstrips" title="H-3 Airstrip" onclick="return popup('H-3_Airstrip');"/>
+<area shape="circle" coords="3800,3768,17" href="javascript:void(0);" alt="Iraq Airstrips" title="H-3 AS" onclick="return popup('H-3_Airstrip');"/>
 
 <!--Jordan -->
 <area shape="circle" coords="2044,2216,17" href="javascript:void(0);" alt="Jordan" title="AQABA" onclick="return popup('AQABA');"/>
@@ -2275,11 +2275,11 @@ You must set the map datum in degrees for the map south west corner for Lat/Long
 <area shape="circle" coords="2764,1324,17" href="javascript:void(0);" alt="Jordan" title="SHAHEED MWAFFAQ" onclick="return popup('SHAHEED_MWAFFAQ');"/>
 <area shape="circle" coords="3684,916,17" href="javascript:void(0);" alt="Jordan" title="WADI EL MURBHA" onclick="return popup('WADI_EL_MURBHA');"/>
 
-<area shape="circle" coords="2848,1372,17" href="javascript:void(0);" alt="Jordan Airstrips" title="AL GADHAF Airstrip" onclick="return popup('AL_GADHAF_Airstrip');"/>
-<area shape="circle" coords="2524,1568,17" href="javascript:void(0);" alt="Jordan Airstrips" title="AL QANTRANAH Airstrip" onclick="return popup('AL_QANTRANAH_Airstrip');"/>
-<area shape="circle" coords="2212,2148,17" href="javascript:void(0);" alt="Jordan Airstrips" title="AL QUWAYHRA Airstrip" onclick="return popup('AL_QUWAYHRA_Airstrip');"/>
-<area shape="circle" coords="2600,1228,17" href="javascript:void(0);" alt="Jordan Airstrips" title="AZRAQ Airstrip" onclick="return popup('AZRAQ_Airstrip');"/>
-<area shape="circle" coords="2520,1328,17" href="javascript:void(0);" alt="Jordan Airstrips" title="HIGHWAY H Airstrip" onclick="return popup('Highway_H_Airstrip');"/>
+<area shape="circle" coords="2848,1372,17" href="javascript:void(0);" alt="Jordan Airstrips" title="AL GADHAF" onclick="return popup('AL_GADHAF_Airstrip');"/>
+<area shape="circle" coords="2524,1568,17" href="javascript:void(0);" alt="Jordan Airstrips" title="AL QANTRANAH" onclick="return popup('AL_QANTRANAH_Airstrip');"/>
+<area shape="circle" coords="2212,2148,17" href="javascript:void(0);" alt="Jordan Airstrips" title="AL QUWAYHRA" onclick="return popup('AL_QUWAYHRA_Airstrip');"/>
+<area shape="circle" coords="2600,1228,17" href="javascript:void(0);" alt="Jordan Airstrips" title="AZRAQ" onclick="return popup('AZRAQ_Airstrip');"/>
+<area shape="circle" coords="2520,1328,17" href="javascript:void(0);" alt="Jordan Airstrips" title="HIGHWAY H" onclick="return popup('Highway_H_Airstrip');"/>
 
 <!--Lebanon -->
 <area shape="circle" coords="2344,336,17" href="javascript:void(0);" alt="Lebanon" title="ALAT" onclick="return popup('ALAT');"/>
@@ -2299,8 +2299,8 @@ You must set the map datum in degrees for the map south west corner for Lat/Long
 <area shape="circle" coords="3544,1396,17" href="javascript:void(0);" alt="Saudi Arabia" title="TURAIF" onclick="return popup('TURAIF');"/>
 <area shape="circle" coords="2680,3592,17" href="javascript:void(0);" alt="Saudi Arabia" title="WEJH" onclick="return popup('WEJH');"/>
 
-<area shape="circle" coords="2520,2532,17" href="javascript:void(0);" alt="Saudi Arabia Airstrips" title="AL BIR Airstrip" onclick="return popup('AL_BIR_Airstrip');"/>
-<area shape="circle" coords="3236,2912,17" href="javascript:void(0);" alt="Saudi Arabia Airstrips" title="QALIBHA Airstrip" onclick="return popup('QALIBHA_Airstrip');"/>
+<area shape="circle" coords="2520,2532,17" href="javascript:void(0);" alt="Saudi Arabia Airstrips" title="AL BIR" onclick="return popup('AL_BIR_Airstrip');"/>
+<area shape="circle" coords="3236,2912,17" href="javascript:void(0);" alt="Saudi Arabia Airstrips" title="QALIBHA" onclick="return popup('QALIBHA_Airstrip');"/>
 
 <!--Syria -->
 <area shape="circle" coords="2728,148,17" href="javascript:void(0);" alt="Syria" title="AL QUSAYR" onclick="return popup('AL_QUSAYR');"/>

@@ -204,10 +204,23 @@ window.ontouchstart = function(e) {
 }
 
 // Find the airport and draw highlight
-function locateAirport(list) {
+function locateAirport(list, loc) {
   // Get the selected airport and map area coordinates
   var imageMap = document.getElementById("imgMap");
-  var area = imageMap.children[list.options[list.selectedIndex].value];
+
+  var area;
+
+  if (list) {
+    area = imageMap.children[list.options[list.selectedIndex].value];
+  } else if (loc) {
+    area = document.querySelector(`area[title="${loc}"]`);
+    console.error(area);
+  }
+
+  if (!area) {
+    return;
+  }
+
   var coords = area.coords.split(",");
   const radius = 17;
 
@@ -813,9 +826,9 @@ function ExportWeather(){
 //
 // Toolbar Buttons
 //
-function button(e) {
-   var id = e.target.id;
-   e.stopImmediatePropagation();
+function button(e, i) {
+   var id = e?.target?.id || i;
+   e && e.stopImmediatePropagation();
 
    switch(id) {
     case "move":
@@ -827,13 +840,15 @@ function button(e) {
         break;
 
     case "zoom1":
-        if (id == "zoom1" && properties.zoom > 0.55) {
-          if (e.shiftKey) properties.zoom = 0.55;
+        if (properties.zoom > 0.55) {
+          if (e?.shiftKey) properties.zoom = 0.55;
           else properties.zoom -= 0.05;
+        } else {
+          break;
         }
     case "zoom2":
         if (id == "zoom2" && properties.zoom < 1.0) {
-          if (e.shiftKey) properties.zoom = 1;
+          if (e?.shiftKey) properties.zoom = 1;
           else properties.zoom += 0.05;
         }
         scaleView(properties.zoom);
@@ -895,7 +910,7 @@ function button(e) {
 
     case "compass":
       if (layer.mission.used) {
-        if (e.shiftKey) {
+        if (e?.shiftKey) {
           centroid = getCentroid();
           window.scrollTo(centroid.x * last_zoom -window.innerWidth/2,centroid.y*last_zoom-window.innerHeight/2);
         }
